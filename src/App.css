@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.chat-container.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #0084ff;
+  color: white;
+}
+
+header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.msg {
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 20px;
+  max-width: 70%;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* ekranın tamamını kaplasın */
+}
+
+.msg.me {
+  background: #0084ff;
+  color: white;
+  margin-left: auto;
+}
+
+.msg.other {
+  background: #ddd;
+  color: black;
+  margin-right: auto;
+}
+
+.chat-container.dark .msg.other {
+  background: #333;
+  color: white;
+}
+
+.input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background: white;
+}
+
+.chat-container.dark .input-box {
+  background: #2c2c2c;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px;
+  margin: 0 5px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+}
+
+.input-box button {
+  border: none;
+  background: #0084ff;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
